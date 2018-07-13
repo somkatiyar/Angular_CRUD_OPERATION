@@ -1,0 +1,40 @@
+
+
+<mat-accordion>
+      <div *ngFor="let cate of category">
+  <mat-expansion-panel>
+
+
+    <mat-expansion-panel-header class="header_view">
+
+      <img mat-card-avatar src="{{cate.image}}" >
+      <mat-card-title>{{cate.catName}}</mat-card-title>
+    </mat-expansion-panel-header>
+
+
+<div *ngFor="let product of cate.product">
+  <div class="productDiv">
+        <mat-card class="example-card">
+
+            <img mat-card-avatar  height=30px width=30px [src]="fetchImage(product.productImage)" >
+            <mat-card-title class="productName">{{product.productName}}</mat-card-title>
+        <mat-card-title class="productCount">{{"count :"+product.productCount}}</mat-card-title>
+
+            <div class="btnDelete">
+              <button  (click)="deleteProduct(cate._id,product._productId)"><mat-icon>delete_forever</mat-icon></button>
+              <img src="/assets/edit.png" alt="" class="btndesign"    (click)="update(product._productId)" >
+            </div>
+
+          </mat-card >
+
+    </div>
+
+
+</div>
+
+
+  </mat-expansion-panel>
+
+</div>
+
+</mat-accordion>

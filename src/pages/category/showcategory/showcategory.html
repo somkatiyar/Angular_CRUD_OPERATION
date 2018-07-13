@@ -1,0 +1,25 @@
+
+  <button mat-button id="addcategory" [routerLink]="['/createcategory']">+AddCategory</button>
+ <div class="showname" *ngFor="let i of categoryData" >
+<mat-card class="example-card">
+
+
+  <mat-card-header >
+
+
+    <img mat-card-avatar src="{{i.image}}" >
+    <mat-card-title>{{i.catName}}</mat-card-title>
+<div class="button_move">
+
+  <img src="/assets/delete.png" alt="" class="btndesign"    (click)="delete(i._id)" >
+  <img src="/assets/edit.png" alt="" class="btndesign"    (click)="update(i._id)" >
+
+    </div>
+  </mat-card-header>
+
+
+
+</mat-card>
+</div>
+
+<!-- routerLink="/adduser" -->

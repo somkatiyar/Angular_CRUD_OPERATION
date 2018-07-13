@@ -1,0 +1,19 @@
+.showname{
+  font-size: 20px;
+  color: blue;
+  background-color: #EEF0F1;
+}
+
+ #data{
+   color: red;
+ }
+ .head{
+   color:black;
+ }
+#divdate {
+  margin-left: 900px;
+  background-color: gray;
+}
+h1{
+  text-align: center;
+}

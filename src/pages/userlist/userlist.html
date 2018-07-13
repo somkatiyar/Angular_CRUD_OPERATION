@@ -1,0 +1,28 @@
+
+  <button mat-button id="adduser" [routerLink]="['/adduser']">+adduser</button>
+ <div class="showname" *ngFor="let i of userData" >
+<mat-card class="example-card">
+
+
+
+  <mat-card-header >
+
+  <img mat-card-avatar src="{{i.image}}" >
+
+    <mat-card-title>{{i.username}}</mat-card-title>
+    
+<div class="button_move">
+
+  <!-- <button mat-button class="btndesign" (click)="delete(i._id)">Delete</button>
+    <button mat-button class="btndesign" (click)="update(i._id)">Edit</button> -->
+    <img src="/assets/delete.png" alt="" class="btndesign"    (click)="delete(i._id)" >
+    <img src="/assets/edit.png" alt="" class="btndesign"    (click)="update(i._id)" >
+    </div>
+  </mat-card-header>
+
+
+
+</mat-card>
+</div>
+
+<!-- routerLink="/adduser" -->

@@ -1,0 +1,30 @@
+<div>
+  <form>
+    <mat-form-field *ngIf="category._id != null">
+      <mat-select placeholder="Select Category" name="_id" [(ngModel)]="category._id"  >
+        <mat-option>None</mat-option >
+        <mat-option *ngFor="let cate of category" [value]="cate._id">
+          {{ cate.catName }}
+        </mat-option>
+      </mat-select>
+  </mat-form-field >
+
+  <mat-form-field class="textCategory"  *ngIf="details._productId != null" >
+    <input   matInput placeholder="id"  [readonly]="true" name="_productId"   [(ngModel)]="details._productId" >
+  </mat-form-field>
+    <mat-form-field class="textCategory">
+      <input matInput placeholder="Product Name" name="productName" [(ngModel)]="details.productName">
+    </mat-form-field>
+    <mat-form-field class="textCategory">
+      <input matInput placeholder="Product count" name="productCount" [(ngModel)]="details.productCount">
+    </mat-form-field>
+    <div class="fileContainer">
+      <input type="file" class="fileControl" name="productImage" (change)="changeListner($event)" />
+      <img class="image"  height="50px" width="50px"   [src]="image" src="{{imageload}}"/>
+    </div>
+    <!-- <button mat-raised-button color="primary" class="btnCreate" (click)="create()">Create</button> -->
+    <button mat-button id = "btnregister"  (click)="Register()">{{btnTitle}}</button>
+
+
+  </form>
+</div>

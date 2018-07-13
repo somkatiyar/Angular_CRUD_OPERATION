@@ -1,0 +1,33 @@
+.btndesign {
+  background-color: #4CAF50; /* Green */
+    border: 2px;
+    border-color: black;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+
+    font-size: 16px;
+
+    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+
+}
+.button_move {
+    margin-left: auto;
+}
+button.btndesign.mat-button._mat-animation-noopable {
+    margin: 0 10px;
+}
+
+#adduser {
+  margin-left: 900px;
+}
+
+
+.example-card {
+    margin-bottom: 10px;
+}

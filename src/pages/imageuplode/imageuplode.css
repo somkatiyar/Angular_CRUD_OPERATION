@@ -1,0 +1,26 @@
+img.card_image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+img.cross {
+    position: absolute;
+    height: 17px;
+    right: 7px;
+    top: 7px;
+}
+.card_wrapper {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 10px;
+    border: 1px solid #c2c2c2;
+    height: 150px;
+    box-shadow: 2px 3px 3px #ececec;
+}
+.card_wrapper:nth-child(odd) {
+    background: whitesmoke;
+}

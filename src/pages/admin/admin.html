@@ -1,0 +1,19 @@
+<!-- <html>
+      <body>
+            <input type="text" id="username" [(ngModel)]='details.userName'><br/>
+                  <input type="text" id="password" [(ngModel)]='details.userPass'><br/>
+            <input type="button" id="login" value="login" (click)="validateAdmin()">
+      </body>
+</html> -->
+
+
+
+
+  <mat-form-field class="example-full-width">
+    <input   matInput placeholder="username"   [(ngModel)]='details.username' >
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="password"  [(ngModel)]='details.password'>
+  </mat-form-field>
+
+  <button mat-button id="btnlogin" (click)="validateAdmin()">Login</button>

@@ -1,0 +1,40 @@
+.header_view{
+  background-color: "black"
+}
+
+
+.btnDelete {
+  margin-left: 450px;
+  background-color: #4CAF50; /* Green */
+
+
+    text-align: center;
+    text-decoration: none;
+
+
+    font-size: 16px;
+
+    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin: 0 10px;
+  margin-left: auto;
+}
+.productDiv{
+  margin-bottom: 10px;
+  vertical-align: middle;
+
+}
+.example-card{
+  display: flex;
+}
+.productCount{
+  margin-left: 20px;
+}
+
+.btndesign {
+  width: 30px;
+  height: 30px;
+  
+}

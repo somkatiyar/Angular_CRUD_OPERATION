@@ -1,0 +1,10 @@
+<form>
+<input type="file" class="fileControl" name="image" (change)="changeListner($event)" />
+<img class="image" width=50px; height=50px; [src]="image"/>
+<button type="button" (click)="create()">insert</button>
+</form>
+
+<div class="card_wrapper" *ngFor="let i of imageData">
+  <img src="assets/cross.png" alt="" class="cross"    (click)="deleteImage(i._id)" >
+    <img  src="{{i.image}}" class="card_image">
+</div>

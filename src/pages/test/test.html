@@ -1,0 +1,6 @@
+<input type="file" class="fileControl" name="testimage" (change)="changeListner($event)" />
+<img class="image" [src]="image"/>
+<button type="button" (click)="addimage()">insert</button>
+<div *ngFor="let i of userData">
+  <img src="{{i.image}}">
+</div>
